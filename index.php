@@ -32,7 +32,7 @@ echo <<<HTML
 
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Yehuda Eisenberg">
+	<meta name="author" content="Memeitizer Limited">
 	<title>PHP Youtube Playlist Downloader</title>
 </head>
 
@@ -40,8 +40,8 @@ echo <<<HTML
 	<div id="content">
 	    <form method="post">
     		<h1>PHP Youtube Playlist Downloader</h1>
-    		<h2><a href="https://github.com/YehudaEi/Youtube-Playlist-Downloader">Fork in GitHub</a></h2>
-    		<h2>based on <a href="https://github.com/YehudaEi/Youtube-Downloader">YehudaEi/Youtube-Downloader</a> Lib</h2>
+    		<h2><a href="https://tiktok.com/@memeitizer">Follow My TikTok!</a></h2>
+    		<h2>Add <a href="https://snapchat.com/add/h.drysdale22">h.drysdale22</a> on <b>Snapchat 👻</b></h2>
                 <br>
                 <input type="text" style="width:180" placeholder="Playlist ID (only id)" name="PID">
     		<br>
