@@ -10,14 +10,14 @@ function downloadVideo($id, $dirName){
         sleep(10);
 
         $youtube = new YouTubeDownloader();
-        $links = $youtube->getDownloadLinks("https://www.youtube.com/watch?v=".$id, "mp4");
+        $links = $youtube->getDownloadLinks("https://www.youtube.com/watch?v=".$id, "mp3");
         $link = $links->getFirstCombinedFormat();
 
         if (!$link) {
             die("no links..");
         }
         
-        return copy($link->url, $dirName.'/'.$links->getInfo()->getTitle().'.mp4');
+        return copy($link->url, $dirName.'/'.$links->getInfo()->getTitle().'.mp3');
     }
 }
 
