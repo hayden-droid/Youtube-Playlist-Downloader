@@ -51,7 +51,7 @@ if(!isset($_GET['url'])){
         require_once('YTDL.php');
         
         $youtube = new YouTubeDownloader();
-        $links = $youtube->getDownloadLinks("https://www.youtube.com/watch?v=".$id, "mp4");
+        $links = $youtube->getDownloadLinks("https://www.youtube.com/watch?v=".$id, "mp3");
         $link = $links->getFirstCombinedFormat();
 
         if (!$link) {
@@ -59,7 +59,7 @@ if(!isset($_GET['url'])){
             die("no links..");
         }
         else{
-            setPath($links->getInfo()->getTitle() . ".mp4", "?url=https://www.youtube.com/watch?v=".$id);
+            setPath($links->getInfo()->getTitle() . ".mp3", "?url=https://www.youtube.com/watch?v=".$id);
         }
 
         $streamer = new YoutubeStreamer();
